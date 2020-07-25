@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> login de usuarios </TITLE>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+<!--
+
+function crearInstancia() {
+	XMLHttp = false;
+
+	if (window.XMLHttpRequest) {
+		return new XMLHttpRequest();
+	} else if (window.ActiveXObject) {
+		var versiones = ["Msxml2.XMLHTTP.7.0", "Msxml2.XMLHTTP.6.0", "Msxml2.XMLHTTP.5.0", "Msxml2.XMLHTTP.4.0", "MSXML2.XMLHTTP.3.0", "MSXML2.XMLHTTP", "Microsoft.XMLHTTP"];
+		for (var i=0;i<versiones.length;i++) {
+			try	{
+				XMLHttp = new ActiveXObject(versiones[i]);
+				if (XMLHttp) {
+					return XMLHttp;
+					break;
+				}
+			} catch (e) {} ;
+		}
+	}
+}
+
+function validarUsuario() {
+ XMLHttp = crearInstancia();
+
+ if (XMLHttp) {
+  username = document.form.username.value;
+  password = document.form.password.value;
+
+  url="login.php?username=" + username + "&password=" + password;
+  XMLHttp.open("POST",url,true)
+  XMLHttp.onreadystatechange=cambiaEstado 
+  XMLHttp.send(null)
+ } else {
+  alert('No se pudo crear la instancia');
+ }
+}
+
+function cambiaEstado() { 
+ var respuesta;
+ if (XMLHttp.readyState==4) { 
+	if (XMLHttp.responseText == '1') {
+		respuesta = "bienvenido !";
+	} else if (XMLHttp.responseText == '2') {
+		respuesta = "por favor complete username y password";
+	} else {
+		respuesta = "username / password incorrectos";	
+	}
+	document.getElementById("respuesta").innerHTML=respuesta;
+ } 
+
+} 
+//-->
+</script>
+</HEAD>
+
+<BODY>
+
+<TABLE ALIGN="CENTER">
+<TR>
+	<TD COLSPAN="2"><span class="top"> >> Login de usuarios </span></TD>
+</TR>
+<TR>
+	<TD CLASS="lateral">
+	
+	<form name="form" id="form"> 
+	<br/> 
+	<span>username </span>
+	<br/> 
+	<span><input type="text" name="username" id="username"></span> 
+	<br/> 
+	<span>password</span> 
+	<br/> 
+	<span><input type="password" name="password" id="password"></span> 
+	<br/> 
+	<br/> 
+	<span><input type="button" value="Enviar" onClick="validarUsuario();"></span> 
+	<br/> 
+	</form> 
+
+	</TD>
+	<TD CLASS="contenido"><span id="respuesta" name="respuesta">&nbsp;</span></TD>
+</TR>
+<TR>
+	<TD COLSPAN="2"><span class="pie">&nbsp;</span></TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>

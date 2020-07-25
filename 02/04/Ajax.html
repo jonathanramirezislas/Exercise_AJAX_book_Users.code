@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD><TITLE> Ajax </TITLE></HEAD>
+<BODY onLoad="cargarTexto();">
+
+<script type="text/javascript">
+<!--
+
+function crearInstancia() {
+	XMLHttp = false;
+
+	if (window.XMLHttpRequest) {
+		return new XMLHttpRequest();
+	} else if (window.ActiveXObject) {
+		var versiones = ["Msxml2.XMLHTTP.7.0",   "Msxml2.XMLHTTP.6.0", "Msxml2.XMLHTTP.5.0", "Msxml2.XMLHTTP.4.0", "Msxml2.XMLHTTP.3.0", "Msxml2.XMLHTTP", "Microsoft.XMLHTTP"];
+		for (var i=0;i<versiones.length;i++) {
+			try	{
+				XMLHttp = new ActiveXObject(versiones[i]);
+				if (XMLHttp) {
+					return XMLHttp;
+					break;
+				}
+			} catch (e) {};
+		}
+	}
+}
+function cargarTexto() {
+ XMLHttp = crearInstancia();
+
+ if (XMLHttp) {
+  var url="Ejemplo.html"
+  XMLHttp.open("GET",url,true)
+  XMLHttp.onreadystatechange=cambiaEstado
+  XMLHttp.send(null)
+ } else {
+  alert('No se pudo crear la instancia');
+ }
+}
+
+function cambiaEstado() { 
+ if (XMLHttp.readyState==4) { 
+   document.getElementById("texto").innerHTML = "<strong>" + XMLHttp.responseText + "</strong>"
+ } 
+} 
+//-->
+</script>
+
+<SPAN ID="texto" NAME="texto"></SPAN>
+
+</BODY>
+</HTML>

@@ -1,0 +1,124 @@
+body {
+    background-color: #ffffff;
+    font-size: 12px;
+    font-family: "Trebuchet MS", Geneva, Arial, Helvetica, SunSans-Regular, sans-serif;
+    color:#222;  
+    padding:0px;
+    margin: 0px;
+}
+
+h1 {
+    font-size:18px;
+}
+
+h2 {
+    font-size:16px;
+}
+
+#container {
+    width: 770px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+}
+
+#banner {
+    padding: 0px;
+    margin: 0px;
+    background-color: #fff;
+}
+
+#banner h1 {
+    font-size: 30px;
+    padding: 5px 0px 0px 50px;
+    margin: 0px;
+}
+
+#banner h2 {
+    color: #999;
+    font-size: 14px;
+    padding: 5px 0px 0px 50px;
+    margin: 0px;
+}
+
+#content {
+    padding: 25px  0px;
+    margin:0px;
+    margin-left:0px;
+    margin-right:200px;
+    background-color: #ffffff;
+}
+
+#content h1, #content h2 {
+    padding: 0px 50px 0px 50px;
+    margin:0px 0px 15px 0px;
+}
+
+#content p {
+    line-height: 18px;
+    padding: 0px 50px 0px 50px;
+    margin:0px 0px 15px 0px;
+}
+
+.inputText {
+	border: 1px solid #c0c0c0;
+	width: 400px;
+    font-size: 12px;
+    font-family: "Trebuchet MS", Geneva, Arial, Helvetica, SunSans-Regular, sans-serif;
+    color:#222;  
+}
+
+.inputUser {
+	border: 1px solid #c0c0c0;
+	width: 150px;
+    font-size: 12px;
+    font-family: "Trebuchet MS", Geneva, Arial, Helvetica, SunSans-Regular, sans-serif;
+    color:#222;  
+}
+
+.formLogin {
+	border: 1px solid #000000;
+	margin-left: 420px;
+	margin-top: 10px;
+    font-size: 12px;
+    font-family: "Trebuchet MS", Geneva, Arial, Helvetica, SunSans-Regular, sans-serif;
+    color:#222;  
+}
+
+.formSubmit {
+	border: 1px solid #000000;
+	margin-top: 5px;
+    font-size: 12px;
+    font-family: "Trebuchet MS", Geneva, Arial, Helvetica, SunSans-Regular, sans-serif;
+    color:#222;  
+}
+
+.historial {
+	border: 1px solid #c0c0c0;
+	width: 453px;
+	height: 200px;
+    line-height: 18px;
+    margin-left: 50px;
+    font-size: 12px;
+    font-family: "Trebuchet MS", Geneva, Arial, Helvetica, SunSans-Regular, sans-serif;
+	overflow: auto; 
+}
+
+.texto {
+	color: #990000;
+}
+
+.fecha {
+	background-color: yellow;
+}
+
+.autor {
+	font-weight: bold;
+}
+
+.login {
+    margin-left: 50px;
+	float: left;
+	width: 200px;
+}

@@ -1,0 +1,24 @@
+{
+    productos:{
+        informatica:[
+            {
+                producto:'Impresora',
+                marca:'HP',
+                modelo:'PhotoSmart 3110',
+                precio:1199
+            },
+            {
+                producto:'Multifuncion',
+                marca:'Lexmark',
+                modelo:'ICS X-1195',
+                precio:188
+            },
+            {
+                producto:'Modem Fax',
+                marca:'Motorola',
+                modelo:'Encore',
+                precio:29.9
+            }
+        ]
+    }
+}

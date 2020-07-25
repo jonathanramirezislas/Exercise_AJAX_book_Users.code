@@ -1,0 +1,192 @@
+* { 
+	padding: 0;
+	margin: 0;
+}
+
+body { 
+	font: .8em Verdana, Arial, Sans-Serif; 
+	line-height: 1.6em; 
+	margin: 0
+}
+
+#wrap {	
+	margin: 0 auto;	width: 80% 
+}
+
+#top {
+	margin: 0 auto;
+	padding: 0;
+	color: #666;
+	background: #FFF url('../imagenes/top.jpg') repeat-x top;
+	height: 81px;
+}
+
+#top h1 { 
+	padding: 10px 0 0 25px; 
+	color: #FFF; 
+	font-size: 160%; 
+	background: transparent;
+}
+
+#top h2 { 
+	padding: 0px 0 0 25px; 
+	color: #aaa; 
+	font-size: 80%; 
+	background: transparent;
+}
+
+#top .padding { 
+	padding-top: 5px; 
+}
+
+#top .lefts { 
+	background: transparent url('../imagenes/topl.jpg') no-repeat left; 
+	height: 81px; 
+}
+
+#top .rights {
+	background: transparent url('../imagenes/topr.jpg') no-repeat right;
+	float: right;
+	height: 81px;
+	width: 18px;
+}
+
+#itemsActuales { 
+	clear: both; 
+	border-top: 1px dotted #888;	
+	border-bottom: 1px dotted #888;
+	background: #eaeaea;
+	color: #808080;
+	padding: 1em;
+	margin: 1px 8px 10px 8px;
+	min-height: 50px;
+	height: auto;
+    _height: 50px;
+}
+
+#main { 
+	background: #FFF; 
+	margin: 3px 0 15px 0; 
+	color: #666; 
+}
+
+#main #rightside {
+	width: 220px;
+	float: right;
+	background: #FFF;
+	margin-right: 8px;
+	color: #666;
+} 
+
+#main #rightside .box {
+	background: #efefef;
+	margin-bottom: 10px;
+	padding: 5px;
+	color: #666;
+	cursor: pointer;
+}
+
+#main #rightside h2 {
+	font: bold 1.0em Arial, Arial, Sans-Serif; 
+    background: #CDCDCD url('../imagenes/greyc.gif') no-repeat top right;
+	height: 18px;
+	padding: 3px;
+	color: #777;
+}
+
+
+#leftside {
+	padding-left: 8px;
+	color: #888;
+	background: #FFF;
+	margin-right: 255px;
+	margin-left: 8px;
+}
+
+#leftside h2 { 
+	color: #555; 
+	text-indent: 17px; 
+	background: #FFF url('../imagenes/head.gif') no-repeat left; 
+}
+
+#footer {
+	clear: both;
+	background: #FFF url('../imagenes/footer.jpg') repeat-x;
+	height: 46px;
+	margin-left: 8px;
+	margin-right: 8px;
+	font-size: 75%;
+	color: #666;
+	text-align: center;
+}
+
+a { 
+	cursor: pointer;
+	color: #0066B3; 
+	background: inherit; 
+	text-decoration: none 
+}
+
+h1 { 
+	font: bold 1.9em Arial, Arial, Sans-Serif 
+}
+
+h2 { 
+	font: bold 1.2em Arial, Arial, Sans-Serif; 
+	padding: 0; 
+	margin: 0 
+}
+
+ul {  
+	padding: 0; 
+	margin: 0
+}
+
+li { 
+	list-style-type: none 
+}
+
+.imagen {
+	float: left;
+	padding: 5px;
+	cursor: pointer;
+}
+
+#contenido {
+	margin-right: 250px;
+	margin-left: 25px;
+}
+
+#cestoDeBasura {
+	width: 50px;
+	height: 50px;
+	float: right;
+ 	background: #FFF url('../imagenes/cesto.jpeg');
+}
+
+.items {
+	cursor: pointer;	
+}
+
+input, textarea {
+	width: 150px;
+	border: 1px solid #c0c0c0;
+}
+
+textarea {
+	height: 100px;
+}
+
+.label {
+	float: left;
+	width: 100px;
+	color: #000;
+}
+
+.container {
+	margin-left: 50px;
+}
+
+.submit {
+	cursor: pointer;
+}

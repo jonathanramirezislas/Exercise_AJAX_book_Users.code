@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ajax - Ejemplo Ficha estadistica</title>
+    <link rel="stylesheet" type="text/css" href="default.css">
+	<SCRIPT LANGUAGE="JavaScript" SRC="ficha.js"></SCRIPT>
+  </head>
+  <body>
+
+  <table width="615" cellpadding="0" cellspacing="0" align="center">
+  <tr>
+  <td valign="top" id="main">
+    <div id="global">
+ 	  <h1 class="firstHeading">XMLHttpRequest - Ficha estadistica</h1>
+	  <div id="bodyContent">
+		<br />
+
+	    Ingrese el nombre del continente: <input type="text" id="nContinente" name="nContinente"><input type="button" value="buscar !" onClick="cargarDatos()">
+
+		<br />
+		<br />
+
+		<table width="99%" class="container">
+		<tr>
+		<td width="60%"><div id="salida1" name="salida1" class="datos">&nbsp;</div></td>
+		<td width="40%" valign="middle" align="center"><div id="salida2" name="salida2">&nbsp;</div></td>
+		</tr>
+		</table>
+
+		<br />
+
+		<p>En este ejemplo utilizamos el objeto XMLHttpRequest de JavaScript para recuperar un archivo XML que contiene ciertas estadisticas acerca de continentes.</p>
+
+		<br />
+
+		<div id="footer">
+		Pagina de prueba. Ajax. Ejemplo de estadisticas de continentes. 
+		</div>
+
+  </td>
+  </tr>
+</table>
+</body>
+</html>

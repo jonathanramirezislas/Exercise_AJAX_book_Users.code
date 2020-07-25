@@ -1,0 +1,66 @@
+#main
+{
+  width: 100%;
+}
+#global {
+	font: x-small sans-serif;
+    font-size: .8em;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 5px;
+}
+.banners {
+    border: 1px solid #aaa;
+    background-color: #f9f9f9;
+    font-size: 95%;
+	margin: 2px 2.5%; 
+	padding: 0 7px; 
+}
+#footer
+{
+  border-top: 1px solid black;
+  text-align: center;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: .7em;
+}
+#sidebar
+{
+  padding-top: 1.5em;
+  width: 175px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.sidebar
+{
+  border: 1px solid black;  
+  color: inherit;
+  background-color: #faf9f6;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 20px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size : .8em;
+}
+.sidebar ul
+{
+  list-style: none;
+  margin-top: 0; 
+  margin-left: 0;
+  padding-left: 0;
+}
+h1 {
+    color: black;
+    background: none;
+    font-weight: normal;
+    margin: 0;
+    padding-top: .5em;
+    padding-bottom: .17em;
+    border-bottom: 1px solid #aaa;
+}
+h1 { 
+	font-size: 188%; 
+}
+table {
+	table-layout: fixed;
+}
+a.pp {
+	font-weight: bold;
+}

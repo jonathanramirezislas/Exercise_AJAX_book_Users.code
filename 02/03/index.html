@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> Ejemplo de datos enviados mediante el metodo send </TITLE>
+
+<script type="text/javascript">
+<!--
+
+function crearInstancia() {
+	XMLHttp = false;
+
+	if (window.XMLHttpRequest) {
+		return new XMLHttpRequest();
+	} else if (window.ActiveXObject) {
+		var versiones = ["Msxml2.XMLHTTP.7.0", "Msxml2.XMLHTTP.6.0", "Msxml2.XMLHTTP.5.0", "Msxml2.XMLHTTP.4.0", "MSXML2.XMLHTTP.3.0", "MSXML2.XMLHTTP", "Microsoft.XMLHTTP"];
+		for (var i=0;i<versiones.length;i++) {
+			try	{
+				XMLHttp = new ActiveXObject(versiones[i]);
+				if (XMLHttp) {
+					return XMLHttp;
+					break;
+				}
+			} catch (e) {} ;
+		}
+	}
+}
+
+req = crearInstancia();
+
+if(req) {
+		url = 'servidor.php?a=10';
+		req.onreadystatechange = manejarEstado;
+		req.open("POST", url, true);
+		req.send('b=11&c=12');
+	}
+
+function manejarEstado() {
+    if (req.readyState == 1) {
+		req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+	}
+
+    if (req.readyState == 4) {
+        if (req.status == 200) {
+            alert(req.responseText);
+        } else {
+            alert("Error al recibir respuesta" + req.statusText);
+        }
+    }
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY></BODY>
+</HTML>

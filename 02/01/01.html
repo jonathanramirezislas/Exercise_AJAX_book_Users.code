@@ -1,0 +1,27 @@
+<script type="text/javascript">
+<!--
+
+XMLHttp = false;
+
+if (window.XMLHttpRequest) {
+	XMLHttp = new XMLHttpRequest();
+	alert('Mozilla / Safari / IE7 / etc')
+} else if (window.ActiveXObject) {
+	var versiones = ["Msxml2.XMLHTTP.7.0", "Msxml2.XMLHTTP.6.0", "Msxml2.XMLHTTP.5.0", "Msxml2.XMLHTTP.4.0", "Msxml2.XMLHTTP.3.0", "Msxml2.XMLHTTP", "Microsoft.XMLHTTP"];
+	for (var i=0;i<versiones.length;i++) {
+		try	{
+			XMLHttp = new ActiveXObject(versiones[i]);
+			if (XMLHttp) {
+				alert('Internet Explorer')
+				break;
+			}
+		} catch (e) {};
+	}
+}
+
+if (!XMLHttp) {
+	alert('No se pudo crear la instancia');
+}
+
+//-->
+</script>

@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title> validacion de formularios </title>
+
+<script language="javascript" src="validar.js"></script>
+
+<style>
+table {
+	border-top: 3px solid #000;
+	border-left: 3px solid #000;
+	background-color: #FFFFCC;
+}
+
+td {
+	padding: 10px;
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+	font: 8pt verdana, arial, sans-serif;
+}
+
+input, select {
+	width: 200px;
+	font: 8pt verdana, arial, sans-serif;
+}
+
+.submit {
+	text-align: right;
+}
+
+.submit input {
+	width: 120px;
+	font: 8pt verdana, arial, sans-serif;
+}
+</style>
+
+</head>
+
+<body>
+
+<table align="center" cellspacing="0">
+<tr>
+	<td>nombre</td>
+	<td><input type="text" id="nombre"></td>
+</tr>
+<tr>
+	<td>apellido</td>
+	<td><input type="text" id="apellido"></td>
+</tr>
+<tr>
+	<td>correo electronico</td>
+	<td><input type="text" id="correo"></td>
+</tr>
+<tr>
+	<td>titulo</td>
+	<td><input type="text" id="titulo"></td>
+</tr>
+<tr>
+	<td>nivel academico</td>
+	<td>
+	<select id="nivel">
+	<option value=""></option>
+	<option value="1">universitarios</option>
+	<option value="2">terciarios</option>
+	<option value="3">secundarios</option>
+	</select>
+	</td>
+</tr>
+<tr>
+	<td>pretensiones</td>
+	<td><input type="text" id="pretensiones"></td>
+</tr>
+<tr>
+	<td colspan="2" class="submit"><input type="button" id="enviar" value="enviar formulario"> </td>
+</tr>
+</table>
+
+</body>
+</html>

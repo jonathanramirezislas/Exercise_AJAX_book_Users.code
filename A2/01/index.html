@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<TITLE> JSON </TITLE>
+<SCRIPT LANGUAGE="JavaScript" SRC="json.js"></SCRIPT>
+</HEAD>
+<BODY>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+
+function x() {
+	this.a = 10;
+	this.b = 20;
+	this.c = new y();
+	this.d = new Array('j', 's', 'on');
+}
+
+function y() {
+	this.f = 11;
+	this.g = 12;
+	this.h = 13;
+}
+
+x1 = new x();
+x1.b = 'veinte';
+
+alert(x1.toJSONString());
+
+/*
+
+{
+	"a":10,
+	"b":"veinte",
+	"c":{
+		"f":11,
+		"g":12,
+		"h":13
+		},
+	"d":["j","s","on"]
+} 
+
+*/
+
+//-->
+</SCRIPT>
+
+</BODY>
+</HTML>

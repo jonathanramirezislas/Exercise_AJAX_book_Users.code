@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="iso-8859-1" ?> 
+<mapa>
+	<continente>
+		<nombre>america</nombre>
+		<paises>
+			<nombre>argentina</nombre>
+			<nombre>brasil</nombre>
+			<nombre>mexico</nombre>
+			<nombre>estados unidos</nombre>
+		</paises>
+		<imagen>america.gif</imagen>
+		<descripcion>America, segunda masa continental aislada más grande de la Tierra. Comprende Norteamerica, Centroamerica y Suramerica, y esta poblado por más de 650 millones de habitantes.</descripcion>
+		<superficie>42.000.000</superficie>
+	</continente>
+
+	<continente>
+		<nombre>europa</nombre>
+		<paises>
+			<nombre>austria</nombre>
+			<nombre>malta</nombre>
+			<nombre>italia</nombre>
+		</paises>
+		<imagen>europa.gif</imagen>
+		<descripcion>Europa, el segundo continente más pequeño, ocupa el segundo lugar en poblacion de todos los continentes, con unos 699.774.000 habitantes (segun estimaciones del año 1993).</descripcion>
+		<superficie>10.359.358</superficie>
+	</continente>
+
+	<continente>
+		<nombre>asia</nombre>
+		<paises>
+			<nombre>corea del norte</nombre>
+			<nombre>india</nombre>
+			<nombre>nepal</nombre>
+			<nombre>turquia</nombre>
+			<nombre>armenia</nombre>
+		</paises>
+		<imagen>asia.gif</imagen>
+		<descripcion>Asia, el más grande de los seis continentes de la Tierra. Sus habitantes representan una quinta parte de la poblacion total del mundo.</descripcion>
+		<superficie>44.936.000</superficie>
+	</continente>
+
+	<continente>
+		<nombre>africa</nombre>
+		<paises>
+			<nombre>nigeria</nombre>
+			<nombre>camerun</nombre>
+			<nombre>zambia</nombre>
+		</paises>
+		<imagen>africa.gif</imagen>
+		<descripcion>Africa, tercer continente más grande de la Tierra, con islas adyacentes, que ocupa el 22% del total de la masa terrestre. </descripcion>
+		<superficie>30.330.000</superficie>
+	</continente>
+
+	<continente>
+		<nombre>oceania</nombre>
+		<paises>
+			<nombre>australia</nombre>
+			<nombre>nueva zelanda</nombre>
+		</paises>
+		<imagen>oceania.gif</imagen>
+		<descripcion>Las subdivisiones tradicionales de las islas de Oceania incluyen a Australia y Nueva Zelanda, entre otras.</descripcion>
+		<superficie>330.000</superficie>
+	</continente>
+</mapa>

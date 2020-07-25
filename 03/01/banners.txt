@@ -1,0 +1,15 @@
+<div>
+Bienvenido a Ajax !<br />Ajax es el acronimo de Asynchronous JavaScript And XML, aunque pueden utilizarse otras tecnologias ...
+</div>
+
+<div>
+Google<br />La empresa <a href="http://www.google.com">Google</a> fue una de las pioneras en utilizar Ajax en sus desarrollos. Uno de ellos es Google Groups.
+</div>
+
+<div>
+Librerias especializadas<br />Veremos en proximos capitulos como utilizar librerias especialmente desarolladas para generar aplicaciones Ajax.
+</div>
+
+<div>
+Ultimo banner<br />Este es el ultimo banner de una serie de cuatro. El proximo a mostrarse sera el primero de la lista.
+</div>

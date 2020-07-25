@@ -1,0 +1,21 @@
+input	{
+	border:solid 1px #000000;
+}
+
+td {
+	border:solid 1px #000000;
+	background-color: #E5ECF9;
+	color:#000000;
+	font-family:verdana, sans-serif; 
+	font-size: 10px; 
+	padding: 10px;
+}
+
+.lateral	{
+	width: 100px;
+}
+
+.contenido	{
+	width: 300px;
+	text-align: center;
+}

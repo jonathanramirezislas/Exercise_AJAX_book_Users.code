@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title> Scriptaculous </title>
+	<script language="javascript" src="prototype/prototype.js"></script>
+	<script language="javascript" src="scriptaculous/scriptaculous.js"></script>
+	<script>
+
+	window.onload = ligarEvento;
+
+	function ligarEvento() {
+		$('ejemplo').onclick = aplicarEfecto;
+	}
+
+	function aplicarEfecto() {
+		new Effect.BlindDown($('ejemplo'));
+		//reemplaze BlindDown por otros efectos
+	}
+
+	</script>
+
+	<style>
+	
+	div {
+		border: 1px solid #000;
+		width: 200px;
+		height: 50px;
+		text-align: center;
+		vertical-align:middle;
+		cursor: pointer;
+	}
+
+	div p {
+		margin-top: 13px;
+		font-family:Arial;
+		font-size:0.8em;
+	}
+
+	</style>
+</head>
+<body>
+
+<div id="ejemplo"> <p>este es un ejemplo</p> </div>
+
+</body>
+</html>

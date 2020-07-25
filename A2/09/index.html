@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
+<head>
+	<title> JSON </title>
+	<link type="text/css" href="styles.css" rel="stylesheet" media="screen" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<SCRIPT LANGUAGE="JavaScript" SRC="json.js"></SCRIPT>
+	<SCRIPT LANGUAGE="JavaScript" SRC="ajax.js"></SCRIPT>
+
+</head>
+<body>
+
+<div id="container">
+
+	<div id="banner"><h1>Chat </h1><h2>en Ajax con JSON </h2></div>
+	<div id="content">  
+		<h1>::: Bienvenido :::</h1>
+
+		<p>Este es un ejemplo de Chat implementado utilizando Ajax y JSON</p>
+
+		<div name="login" id="login">	
+			<div class="login">Ingrese su nombre de usuario:</div> <input type="text" class="inputUser" id="nickname" name="nickname">
+			<br />
+			
+			<div class="login">Ingrese su password:</div> <input type="password" class="inputUser" id="password1" name="password1">		
+			<br />	
+			
+			<div class="login">Nuevo usuario? Repita su password:</div> <input type="password" class="inputUser" id="password2" name="password2">		
+			<br />	
+
+			<input type="button" value="login" class="formLogin" onclick="ingresoChat()"> 
+			<br />	
+		</div>
+
+		<div class="chat" name="chat" id="chat" style="display: none">
+
+			<div id="historial" name="historial" class="historial"></div>
+
+			<p>
+
+			<input type="text" class="inputText" id="comentario" name="comentario">
+			<input type="button" class="formSubmit" value="enviar" onClick="agregarComentario()">
+
+			<br />Ingrese mensaje y presione <b>enviar</b>
+
+			<br /><br />
+			<a style="cursor: pointer" onclick="mostrarHistorial()">[ Ver historial <span id="modoHistorial" name="modoHistorial">Completo</span> ]</a>		
+			<a style="cursor: pointer" onclick="terminarSesion()">[ Terminar sesion ]</a>
+
+			</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

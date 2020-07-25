@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+       <title> yahoo ui </title>
+
+       <script type="text/javascript" src="yahoo/YAHOO.js"></script>
+       <script type="text/javascript" src="connection/connection.js"></script>
+
+</head>
+
+<body>
+
+       <script type="text/javascript">
+
+       window.onload = function() { document.getElementById('boton').onclick = realizarPeticion; };
+
+
+       var objetoReceptor =
+       {
+               success:function(respuesta){
+
+                       var div = document.getElementById('contenedor');
+                       div.innerHTML  = "<h1>Respuesta: " + respuesta.responseText + "</h1>";
+                       div.innerHTML += "<h2>Argumento 1: " + respuesta.argument.arg1;
+                       div.innerHTML += "<h2>Argumento 2: " + respuesta.argument.arg2;
+               },
+               failure:function(respuesta){
+                       var div = document.getElementById('contenedor');
+                       div.innerHTML  = "<h1>Error: " + respuesta.statusText + "</h1>";
+                       div.innerHTML += "<h2>Codigo HTTP: " + respuesta.status + "</h2>";
+               },
+               argument: { arg1:"uno", arg2:"dos" }
+       };
+
+       function realizarPeticion(){
+               var urlDestino = "proceso.php?libreria=Yahoo UI";
+               var request = YAHOO.util.Connect.asyncRequest('GET', urlDestino,objetoReceptor);
+       }
+
+       </script>
+
+       <div id="contenedor"> <input type="button" id="boton" value="clic aqui"> </div>
+
+</body>
+</html>

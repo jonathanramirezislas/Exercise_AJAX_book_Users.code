@@ -1,0 +1,51 @@
+#main
+{
+  width: 100%;
+}
+
+#global 
+{
+	font: x-small sans-serif;
+    font-size: .8em;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 5px;
+}
+
+.container 
+{
+    border: 1px solid #AAAAAA;
+    background-color: #f9f9f9;
+	height: 200px;
+	padding: 7px;
+}
+
+.datos 
+{
+    font-size: 95%;
+    border-right: 1px solid #aaa;
+	height: 200px;
+}
+
+#footer
+{
+  border-top: 1px solid black;
+  text-align: center;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: .7em;
+}
+
+h1 {
+    color: black;
+    background: none;
+    font-weight: normal;
+    margin: 0;
+    padding-top: .5em;
+    padding-bottom: .17em;
+    border-bottom: 1px solid #aaa;
+	font-size: 188%; 
+}
+
+table {
+	table-layout: fixed;
+}

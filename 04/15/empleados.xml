@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<empleados>
+	<empleado>
+		<nombre> nombre 1 </nombre>
+		<apellido> apellido 1 </apellido>
+		<direccion> direccion 1 </direccion>
+		<telefono> telefono 1 </telefono>
+		<email> email 1 </email>
+	</empleado>
+	<empleado>
+		<nombre> nombre 2 </nombre>
+		<apellido> apellido 2 </apellido>
+		<direccion> direccion 2 </direccion>
+		<telefono> telefono 2 </telefono>
+		<email> email 2 </email>
+	</empleado>
+	<empleado>
+		<nombre> nombre 3 </nombre>
+		<apellido> apellido 3 </apellido>
+		<direccion> direccion 3 </direccion>
+		<telefono> telefono 3 </telefono>
+		<email> email 3 </email>
+	</empleado>
+</empleados>
